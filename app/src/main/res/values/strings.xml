@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MeChat</string>
+    <string name="enter_ip_port">enter ip:port</string>
+    <string name="youname">youname</string>
+    <string name="your_name">your name</string>
+    <string name="up_canc">向上拖动取消</string>
+</resources>

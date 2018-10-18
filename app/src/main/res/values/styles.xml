@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/blue_t</item>
+    </style>
+
+    <style name="AppTheme.FullSc" parent="AppTheme" />
+
+    <style name="ShadowView">
+        <item name="android:shadowColor">@android:color/darker_gray</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+
+    <style name="MyEditTextStyle">
+        <item name="colorControlNormal">?attr/colorPrimary</item>
+        <item name="colorControlActivated">?attr/colorAccent</item>
+    </style>
+</resources>

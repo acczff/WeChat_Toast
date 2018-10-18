@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bk4"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/login_cent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/iv_tx"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:padding="2dp" />
+
+            <View
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:background="@drawable/fore_image" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3">
+
+                <EditText
+                    android:id="@+id/et_ip"
+                    style="@style/MyEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_ip_port"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingRight="25dp" />
+
+                <ImageView
+                    android:id="@+id/select_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_alignEnd="@id/et_ip"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:src="@drawable/xiala"
+                    android:tint="@color/blue_t" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:id="@+id/input_name_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                tools:ignore="UselessParent">
+
+                <EditText
+                    android:id="@+id/name_enter"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bk_edit"
+                    android:hint="@string/your_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingRight="50dp"
+                    android:paddingStart="10dp"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/iv_go"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignBottom="@id/name_enter"
+                    android:layout_alignEnd="@id/name_enter"
+                    android:elevation="10dp"
+                    android:src="@mipmap/goin"
+                    android:tint="@color/blue_t"
+                    android:translationZ="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
